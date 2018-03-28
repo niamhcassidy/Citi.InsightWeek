@@ -6,19 +6,24 @@ using System.Web;
 namespace VerySimpleContactsCRUDApp
 {
     public class MarketData
-    { 
-        public MarketData(String ticker, String Date, double open, double high, double low, double close, int volume){
-        ticker=ticker;
-        Date=Date;
-        open=open;
-        high=high;
-        low=low;
-        close=close;
-        volume=volume;
-    }
-public String ticker { get; set; }
-public string Name { get; set; }
-public string Email { get; set; }
-public string Phone { get; set; }
+    {
+        public MarketData(string ticker, string date, double open, double high, double low, double close, int volume)
+        {
+            Ticker = ticker;
+            Date = date;
+            Open = open;
+            High = high;
+            Low = low;
+            Close = close;
+            Volume = volume;
+        }
+        public string Ticker { get; set; }
+        public string Date { get; set; }
+        public double Open { get; set; }
+        public double High { get; set; }
+        public double Low { get; set; }
+        public double Close { get; set; }
+        public int Volume { get; set; }
 
+    }
 }
